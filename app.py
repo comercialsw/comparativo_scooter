@@ -39,10 +39,13 @@ else:
 
     for index, row in dados_filtrados.iterrows():
         valores = [
-            row["Velocidade (km/h)"],
+            row["Velocidade Máxima (km/h)"],
             row["Autonomia (km)"],
-            row["Potência (W)"] / 10,  # Ajuste para melhor visualização
-            row["Peso (kg)"]
+            row["Motor"] / 10,  # Ajuste para melhor visualização
+            row["Peso Máximo Suportado (kg)"],
+            row["Aro"],
+            row["Bateria"],
+            row["Removível"]
         ]
 
         fig.add_trace(go.Scatterpolar(
@@ -56,20 +59,12 @@ else:
         polar=dict(
             radialaxis=dict(
                 visible=True,
-                range=[0, max(dados_filtrados["Potência (W)"])/10 + 10]
+                range=[0, max(dados_filtrados["Motor"])/10 + 10]
             )
         ),
         showlegend=True
     )
 
     st.plotly_chart(fig, use_container_width=True)
-
-    # Recomendações adicionais
-    st.subheader("💡 Recomendações Baseadas em Avaliações:")
-    top_avaliacao = dados.sort_values(by="Avaliação Média", ascending=False).iloc[0]
-    st.write(f"🔝 **Melhor avaliada:** {top_avaliacao['Modelo']} ({top_avaliacao['Avaliação Média']}⭐️)")
-
-    menor_preco = dados.sort_values(by="Preço (R$)", ascending=True).iloc[0]
-    st.write(f"💰 **Mais acessível:** {menor_preco['Modelo']} (R$ {menor_preco['Preço (R$)']})")
 
 
