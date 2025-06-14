@@ -42,8 +42,7 @@ else:
             row["Velocidade (km/h)"],
             row["Autonomia (km)"],
             row["Potência (W)"] / 10,  # Ajuste para melhor visualização
-            row["Peso (kg)"],
-            row["Avaliação Média"] * 10  # Ajuste visual
+            row["Peso (kg)"]
         ]
 
         fig.add_trace(go.Scatterpolar(
