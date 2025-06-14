@@ -33,7 +33,7 @@ else:
     # Gráfico Radar para comparação visual
     st.subheader("🌟 Comparação Visual (Gráfico Radar)")
 
-    categorias = ["Velocidade (km/h)", "Autonomia (km)", "Potência (W)", "Peso (kg)", "Avaliação Média"]
+    categorias = ["Velocidade Máxima (km/h", "Autonomia (km)", "Motor", "Peso Máximo Suportado (kg)", "Aro"]
 
     fig = go.Figure()
 
