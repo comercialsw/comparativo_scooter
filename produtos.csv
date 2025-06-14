@@ -1,4 +1,15 @@
-Modelo,Velocidade (km/h),Autonomia (km),Potência (W),Peso (kg),Preço (R$),Avaliação Média
-Scooter A,25,30,350,12,2499,4.5
-Scooter B,30,40,500,15,3499,4.7
-Scooter C,20,25,250,10,1999,4.3
+Modelo,Motor,Peso Máximo Suportado (kg),Altura Banco (cm),Altura Guidão (cm),Aro,Autonomia (km),Velocidade Máxima (km/h),Bateria,Removível,Comprimento Total (cm),Entre Eixos (cm),Estatura Média (cm)
+Smartway Austin 1000W,1000W,160,65,69~94,"8""",30,32,60V 15Ah,Não,160,125,180
+Smartway Confort 500W,500W,120,70,102,"14""",30,32,48V 15Ah,Não,145,105,175
+Smartway City 350W,350W,120,70,102,"14""",30,32,48V 15Ah,Não,145,105,175
+Smartway Route 500W,500W,120,70,102,"14""",30,32,48V 15Ah,Sim,145,105,175
+Smartway Route 350W,350W,120,70,102,"14""",30,32,48V 15Ah,Sim,145,105,175
+Smartway Evolution 1000W,1000W,250,76,69~100,"10""",30,32,60V 15Ah,Não,178,130,188
+Smartway Evomax 1000W,1000W,250,76,69~100,"10""",30,32,60V 15Ah,Não,173,127,188
+Smartway Family 500W,500W,250,60,66~96,"8""",30,32,48V 15Ah,Não,150,100,180
+Smartway Power 600W,600W,250,54,66~96,"8""",30,32,48V 15Ah,Não,150,113,175
+Smartway Save 350W,350W,120,70,69~102,"14""",30,32,48V 15Ah,Não,145,105,175
+Smartway Turbo 500W,500W,120,70,102,"14""",30,32,48V 15Ah,Não,145,105,175
+Smartway Turbo 1000W,1000W,120,70,102,"14""",30,32,48V 15Ah,Não,145,105,175
+Smartway Ultra 1000W,1000W,250,54,66~96,"8""",30,32,48V 15Ah,Não,150,113,175
+Smartway Wasp 800W,800W,150,73,69~102,"10""",30,25,48V 15Ah,Não,160,127,175
